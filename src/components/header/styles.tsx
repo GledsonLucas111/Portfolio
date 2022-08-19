@@ -7,7 +7,7 @@ export const Component = styled.header`
   width: 100%;
   height: 10vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
   @media screen and (max-width: 600px) {

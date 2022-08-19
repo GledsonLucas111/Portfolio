@@ -11,6 +11,7 @@ import Typewriter from "typewriter-effect";
 import Lottie from "react-lottie";
 import developerRed from "animations/developer-red.json";
 import Button from "@mui/material/Button";
+import Footer from "components/footer";
 // import { BsLinkedin, BsWhatsapp, BsGithub, BsInstagram } from "react-icons/bs";
 // import { RiMailSendLine } from "react-icons/ri";
 
@@ -63,7 +64,7 @@ const Home = () => {
           <Lottie options={defaultOptions} width="100%" />
         </div>
       </BoxAnimation>
-      
+      <Footer />
     </HomeComponent>
   );
 };

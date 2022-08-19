@@ -35,6 +35,7 @@ const Header = () => {
           Contatos
         </Typography>
       </BoxList>
+      
     </Component>
   );
 };

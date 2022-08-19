@@ -42,16 +42,16 @@ export const BoxAnimation = styled(Box)`
   .animation {
     width: 30vw;
   }
-  .buttonCV {
-    
-  }
   @media screen and (max-width: 850px) {
     .animation {
-      width: 45vw;
+      width: 50vw;
     }
   }
   @media screen and (max-width: 550px) {
     flex-direction: column-reverse;
+    .animation {
+      width: 80vw;
+    }
   }
 `;
 
