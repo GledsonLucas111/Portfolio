@@ -15,6 +15,7 @@ export const BoxApresentation = styled(Box)`
   overflow: hidden;
 
   .presentation {
+    font-size: 3.2rem;
     margin: 2.5rem 1rem 1rem;
     color: #fff;
     white-space: nowrap;
@@ -39,18 +40,18 @@ export const BoxAnimation = styled(Box)`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column-reverse;
   .animation {
     width: 30vw;
   }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1150px) {
     .animation {
-      width: 50vw;
+      width: 45vw;
     }
   }
-  @media screen and (max-width: 550px) {
-    flex-direction: column-reverse;
+  @media screen and (max-width: 600px) {
     .animation {
-      width: 80vw;
+      width: 85vw;
     }
   }
 `;
