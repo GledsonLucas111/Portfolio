@@ -9,7 +9,7 @@ export const Component = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  margin: 0rem 0rem 2rem;
   @media screen and (max-width: 600px) {
     justify-content: flex-start;
   }

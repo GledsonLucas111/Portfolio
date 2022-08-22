@@ -3,11 +3,11 @@ import { neutralColor } from "constants/colors";
 import styled from "styled-components";
 
 export const Component = styled(Box)`
-  height: 100vh;
+  height: 100%;
 `;
 export const HeaderError = styled.header`
   width: 100%;
-  height: 10%;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -18,13 +18,15 @@ export const HeaderError = styled.header`
 `;
 export const InfoError = styled(Box)`
   width: 100%;
-  height: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  height: 70vh;
   gap: 10px;
+  margin: 2.5rem 0rem 0rem;
   @media screen and (max-width: 900px) {
     flex-direction: column-reverse;
+    justify-content: center;
   }
   @media screen and (max-width: 650px) {
     .error {
@@ -50,7 +52,7 @@ export const InfoError = styled(Box)`
     }
   }
   .rigth {
-    width: 40vw;
+    width: 50vw;
   }
 `;
 export const buttonBack = {

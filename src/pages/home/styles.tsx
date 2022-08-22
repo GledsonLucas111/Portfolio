@@ -16,7 +16,7 @@ export const BoxApresentation = styled(Box)`
 
   .presentation {
     font-size: 3.2rem;
-    margin: 2.5rem 1rem 1rem;
+    margin: 0rem 1rem 1rem;
     color: #fff;
     white-space: nowrap;
   }

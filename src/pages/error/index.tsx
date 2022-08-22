@@ -5,8 +5,11 @@ import Lottie from "react-lottie";
 import Footer from "components/footer";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { goToHome } from "routes/Coordinator";
+import { useNavigate } from "react-router-dom";
 
 const Error = () => {
+  const navigate = useNavigate()
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -22,6 +25,7 @@ const Error = () => {
        404 not found   
       </Typography>
       </HeaderError>
+
       <InfoError>
       <div className="left">
         <Typography variant="h3" className="error">
@@ -32,7 +36,7 @@ const Error = () => {
           <p >ou está temporariamente indisponível</p>
         </Typography>
         <div>
-          <Button sx={buttonBack}>Voltar</Button>
+          <Button sx={buttonBack} onClick={()=> goToHome(navigate)}>Voltar</Button>
         </div>
       </div>
 
