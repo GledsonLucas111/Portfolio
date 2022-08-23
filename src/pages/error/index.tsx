@@ -1,15 +1,14 @@
 import * as React from "react";
-import { buttonBack, Component, HeaderError, InfoError } from "./styles";
-import notFound from "animations/404.json";
+import { buttonBack, Component } from "./styles";
+import notFound from "animations/lonely-404.json";
 import Lottie from "react-lottie";
-import Footer from "components/footer";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import { goToHome } from "routes/Coordinator";
 import { useNavigate } from "react-router-dom";
+import Typography from "@mui/material/Typography";
 
 const Error = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -20,33 +19,22 @@ const Error = () => {
   };
   return (
     <Component>
-      <HeaderError>
-      <Typography variant="h6" className="header">
-       404 not found   
-      </Typography>
-      </HeaderError>
-
-      <InfoError>
-      <div className="left">
-        <Typography variant="h3" className="error">
-          Tenho más noticias <p>para você</p>
-        </Typography>
-        <Typography variant="h6" className="typeError">
-          A página que você está procurando não foi encontrada
-          <p >ou está temporariamente indisponível</p>
-        </Typography>
-        <div>
-          <Button sx={buttonBack} onClick={()=> goToHome(navigate)}>Voltar</Button>
-        </div>
+      <div className="button">
+        <Button sx={buttonBack} onClick={() => goToHome(navigate)}>
+          Voltar
+        </Button>
       </div>
-
-      <div className="rigth">
+      <div>
+        <Typography variant="h6" className="typeError">
+          Error 404 - Página não encontrada.
+        </Typography>
+        <Typography variant="h6" className="error">
+          A página que você tentou acessar está indisponível ou não exite.
+        </Typography>
+      </div>
+      <div className="animation">
         <Lottie options={defaultOptions} width="100%" />
       </div>
-      </InfoError>
-
-      <Footer />
-
     </Component>
   );
 };

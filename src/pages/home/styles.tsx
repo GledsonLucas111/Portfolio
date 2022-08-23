@@ -59,11 +59,11 @@ export const BoxAnimation = styled(Box)`
 export const buttonCV = {
   color: "#fff",
   border: "1px solid transparent",
-  backgroundColor: "#F61E3B",
+  backgroundColor: "#3BC974",
   transition: "boxShadow 0.5s ease-in-out",
   "&:hover": {
     border: "1px solid transparent",
-    backgroundColor: "#F61E3B",
+    backgroundColor: "#3BC974",
     animation:
       "shadow-pop-br 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both",
   },

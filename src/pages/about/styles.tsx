@@ -7,32 +7,40 @@ export const Contect = styled(Box)`
   align-items: center;
   height: 85vh;
   overflow: hidden;
-  div {
-    text-align: center;
+`;
 
-    .techs {
-      width: 70px;
-      padding: 0px 10px 0;
-    }
-  }
-  .textHeader {
-    margin: 0 0 2rem;
-    color: #fff;
-  }
+export const AboutMe = styled(Box)`
+  color: #fff;
+  text-align: center;
   .aboutMe {
-    margin: 0 0 2rem;
+    margin: 2rem 0 2rem;
     font-size: 18px;
     color: #fff;
     width: 80vw;
     text-align: center;
+    .link {
+      color: #fe7e02;
+    }
+    .skills {
+      display: inline;
+      color: #3bc974;
+      cursor: pointer;
+    }
   }
-  .link {
-    color: #fe7e02;
+  @media (max-width: 490px) {
+    .aboutMe {
+      margin: 1rem 0 1rem;
+      font-size: 15px;
+      width: 90vw;
+    }
   }
-  .skills {
-    display: inline;
-    color: #66e499;
-    cursor: pointer;
+`;
+
+export const TechsBox = styled(Box)`
+  text-align: center;
+  .techs {
+    width: 70px;
+    padding: 0px 10px 0;
   }
   .techsText {
     text-align: center;
@@ -40,19 +48,9 @@ export const Contect = styled(Box)`
     color: #fff;
   }
   @media (max-width: 490px) {
-    div {
     .techs {
       width: 50px;
       padding: 0px 5px 0;
     }
-  }
-  .textHeader {
-    margin: 0 0 1rem;
-  }
-  .aboutMe {
-    margin: 0 0 1rem;
-    font-size: 15px;
-    width: 90vw;
-  }
   }
 `;

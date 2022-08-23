@@ -3,58 +3,28 @@ import { neutralColor } from "constants/colors";
 import styled from "styled-components";
 
 export const Component = styled(Box)`
-  height: 100%;
-`;
-export const HeaderError = styled.header`
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  .header {
-    padding-left: 30px;
-    color: #fff;
-  }
-`;
-export const InfoError = styled(Box)`
   width: 100%;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-around;
-  height: 70vh;
+  justify-content: space-evenly;
+  height: 100vh;
   gap: 10px;
-  margin: 2.5rem 0rem 0rem;
-  @media screen and (max-width: 900px) {
-    flex-direction: column-reverse;
-    justify-content: center;
+
+  .typeError {
+    color: #F61E3B;
+    font-size: 1.3rem;
+    padding: 0 0.5rem;
+    text-align: center;
   }
-  @media screen and (max-width: 650px) {
-    .error {
-      font-size: 5.8vw;
-    }
-    .typeError {
-      font-size: 3.8vw;
-      p {
-        display: inline;
-      }
-    }
-  }
-  .left {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-left: 30px;
-    .error {
-      color: #fff;
-    }
-    .typeError {
-      color: ${neutralColor};
-    }
-  }
-  .rigth {
-    width: 50vw;
+  .error {
+    color: ${neutralColor};
+    font-size: 1.3rem;
+    padding: 0 0.5rem;
+    text-align: center;
   }
 `;
+
 export const buttonBack = {
   color: "#fff",
   border: "1px solid transparent",

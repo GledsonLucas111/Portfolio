@@ -2,7 +2,7 @@ import { Tooltip, Typography } from "@mui/material";
 import Footer from "components/footer";
 import Header from "components/header";
 import { Techs } from "types/techs";
-import { Contect } from "./styles";
+import { AboutMe, Contect, TechsBox } from "./styles";
 
 const About = () => {
   const hardSkills = `
@@ -63,7 +63,7 @@ const About = () => {
     <div>
       <Header />
       <Contect>
-        <div>
+        <AboutMe>
           <Typography variant="h5" className="textHeader">
             Sobre mim
           </Typography>
@@ -92,11 +92,11 @@ const About = () => {
                 Soft Skills
               </Typography>
             </Tooltip>
-            , e colocando em pratica tudo que já sei para tentar simplificar a
-            vida das pessoas.
+            , e colocando em prática tudo que já sei e que estou aprendendo para
+            tentar simplificar a vida das pessoas.
           </Typography>
-        </div>
-        <div>
+        </AboutMe>
+        <TechsBox>
           <Typography variant="h5" className="techsText">
             Tecnologias
           </Typography>
@@ -107,7 +107,7 @@ const About = () => {
               </Tooltip>
             );
           })}
-        </div>
+        </TechsBox>
       </Contect>
       <Footer />
     </div>

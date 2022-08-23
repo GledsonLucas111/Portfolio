@@ -9,25 +9,17 @@ import {
 import Typography from "@mui/material/Typography";
 import Typewriter from "typewriter-effect";
 import Lottie from "react-lottie";
-import developerRed from "animations/developer-red.json";
+import developer from "animations/developer-yoga.json";
 import Button from "@mui/material/Button";
 import Footer from "components/footer";
-// import { BsLinkedin, BsWhatsapp, BsGithub, BsInstagram } from "react-icons/bs";
-// import { RiMailSendLine } from "react-icons/ri";
 
 const Home = () => {
-  // const actions: any = [
-  //   { icon: <RiMailSendLine />, name: "E-mail" },
-  //   { icon: <BsLinkedin />, name: "LinkedIn" },
-  //   { icon: <BsGithub />, name: "GitHub" },
-  //   { icon: <BsInstagram />, name: "Instagram" },
-  //   { icon: <BsWhatsapp />, name: "WhatsApp" },
-  // ];
+
 
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: developerRed,
+    animationData: developer,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
