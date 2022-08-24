@@ -79,7 +79,7 @@ const About = () => {
             >
               Labenu
             </a>
-            . Um dos meus objetios tanto como pessoa quanto profissional é de
+            . Um dos meus objetivos tanto como pessoa quanto profissional é de
             estar em um constante aprendizado, sempre aprimorando minhas{" "}
             <Tooltip title={hardSkills}>
               <Typography variant="body1" className="skills">
