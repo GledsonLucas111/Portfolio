@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Future eats",
+    "description": "O projeto simula uma plataforma de entrega de refeições e alimentos online. Future eats é inspirado no app Uber eats",
+    "repository": "https://github.com/GledsonLucas111/Future-eats",
+    "deploy": "https://futureeats-lebefood4.surge.sh",
+    "technologies": 
+    ["HTML", "CSS", "React.Js", "Javascript","Styled-components", "Material UI", "Ant Design" , "Axios"],
+    "image": [],
+    "video": ""
+  },
+  {
+    "name": "Pokédex",
+    "description": "Um web site inspirado na Pokédex do anime Pokémon. Nele você pode criar sua própria pokédex com os seus pokémons preferidos.",
+    "repository": "https://github.com/GledsonLucas111/Pokedex",
+    "deploy": "https://pokedex-vaughan3.surge.sh",
+    "technologies": 
+    ["HTML", "CSS", "React.Js", "Javascript","Styled-components", "Material UI", "Chakra UI" , "Axios"],
+    "image": [""],
+    "video": ""
+  },
+  {
+    "name": "TMDB",
+    "description": "Um web site inspirado na plataforma de filmes The Movie DB.",
+    "repository": "https://github.com/GledsonLucas111/TMDB",
+    "deploy": "https://standing-apparatus.surge.sh",
+    "technologies": 
+    ["HTML", "CSS", "React.Js", "Javascript", "Styled-components", "Material UI", "Axios"],
+    "image": [""],
+    "video": ""
+  },
+  {
+    "name": "Brainn",
+    "description": "Uma aplicação web que mostra os Resultados das Loterias.",
+    "repository": "https://github.com/GledsonLucas111/Brainn",
+    "deploy": "http://foregoing-summer.surge.sh",
+    "technologies": 
+    ["HTML", "CSS", "React.Js", "Typescript", "Styled-components", "Material UI", "Axios"],
+    "image": [""],
+    "video": ""
+  },
+  {
+    "name": "Labe Ninja",
+    "description": "Este é um projeto web inspirado na plataforma GetNinjas",
+    "repository": "https://github.com/GledsonLucas111/Labe-Ninja",
+    "deploy": "https://quaint-flight.surge.sh/",
+    "technologies": 
+    ["HTML", "CSS", "React.Js", "Javascript", "Styled-components", "Material UI", "Axios"],
+    "image": [""],
+    "video": ""
+  },
+  {
+    "name": "ShopBike",
+    "description": "Case desenvolvido no processo seletivo de uma empresa. App simula uma loja de bicicletas.",
+    "repository": "https://github.com/GledsonLucas111/ShopBike",
+    "deploy": "https://documenter.getpostman.com/view/19298430/UzBqnjnP",
+    "technologies": 
+    ["Node.Js", "Typescript", "Express", "MySQL", "Knex.Js", "Jest", "Postman", "Heroku"],
+    "image": [""],
+    "video": ""
+  },
+  {
+    "name": "Labook",
+    "description": "Um projeto back-end inspirado em algumas das funcionalidades do Facebook.",
+    "repository": "https://github.com/GledsonLucas111/Labook",
+    "deploy": "https://documenter.getpostman.com/view/19298430/UyxdM9g4",
+    "technologies": 
+    ["Node.Js", "Typescript", "Express", "MySQL", "Knex.Js", "Postman"],
+    "image": [""],
+    "video": ""
+  },
+  {
+    "name": "Cookenu",
+    "description": "Este é um sistema de gerenciamento de receitas.",
+    "repository": "https://github.com/GledsonLucas111/Cookenu",
+    "deploy": "https://documenter.getpostman.com/view/19298430/UyrGCERf",
+    "technologies": 
+    ["Node.Js", "Typescript", "Express", "MySQL", "Knex.Js", "Postman"],
+    "image": [""],
+    "video": ""
+  },
+  {
+    "name": "LAMA",
+    "description": "Labenu Musical Awards, uma API cujo o proposito é gerenciar shows e bandas que se apresentariam",
+    "repository": "https://github.com/GledsonLucas111/LAMA",
+    "deploy": "https://documenter.getpostman.com/view/19295583/UyxhonQY",
+    "technologies": 
+    ["Node.Js", "Typescript", "Express", "MySQL", "Knex.Js", "Postman"],
+    "image": [""],
+    "video": ""
+  }
+]
