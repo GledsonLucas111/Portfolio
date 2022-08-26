@@ -2,8 +2,8 @@ import Box from "@mui/material/Box";
 import styled from "styled-components";
 
 export const Main = styled(Box)`
-  height: 100vh;
   overflow: hidden;
+  margin: 7rem 0 0;
 `;
 export const Content = styled(Box)`
   display: flex;
@@ -22,6 +22,10 @@ export const Content = styled(Box)`
       font-size: 30px;
       margin: 0 0.3rem;
       color: #fff;
+      transition: filter 150ms ease-in-out;
+      &:hover {
+        filter: brightness(75%);
+      }
     }
     @media screen and (max-width: 300px) {
       .MuiIconButton-root {
@@ -30,20 +34,9 @@ export const Content = styled(Box)`
     }
     }
   }
-  @media screen and (max-width: 570px) {
-    .typografy_1 {
-      font-size: 17px;
-    }
+  @media (max-width: 490px) {
     .typografy_2 {
-      font-size: 16px;
-    }
-  }
-  @media screen and (max-width: 570px) and (max-height: 680px) {
-    .typografy_1 {
       font-size: 15px;
-    }
-    .typografy_2 {
-      font-size: 14px;
     }
   }
 `;
@@ -56,6 +49,7 @@ export const Form = styled(Box)`
   .MuiTextField-root {
     background-color: #f2f2f2;
     border-radius: 5px 5px 0 0;
+    
   }
   @media screen and (max-width: 570px) {
     width: 80%;

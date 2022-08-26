@@ -58,7 +58,6 @@ const Contact = () => {
   };
   return (
     <Main>
-      <Header />
       <Content>
         <div>
           <Typography
@@ -130,7 +129,6 @@ const Contact = () => {
           })}
         </div>
       </Content>
-
       <Footer />
     </Main>
   );

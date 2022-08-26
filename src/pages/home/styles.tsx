@@ -3,7 +3,6 @@ import { neutralColor } from "constants/colors";
 import styled from "styled-components";
 
 export const HomeComponent = styled.div`
-  height: 100vh;
 `;
 
 export const BoxApresentation = styled(Box)`
@@ -40,7 +39,7 @@ export const BoxAnimation = styled(Box)`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   .animation {
     width: 30vw;
   }

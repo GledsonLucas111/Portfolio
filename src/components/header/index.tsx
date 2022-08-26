@@ -2,7 +2,7 @@ import * as React from "react";
 import Typography  from "@mui/material/Typography";
 import { BoxList, BoxLogo, Component, StyledBurguer } from "./styles";
 import GL from "assets/GL.svg";
-import { goToAbout, goToContact, goToHome, goToProjects } from "routes/Coordinator";
+import { goToHome,  } from "routes/Coordinator";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -28,13 +28,13 @@ const Header = () => {
         <div />
       </StyledBurguer>
       <BoxList active={active} onClick={() => toggleDrawer(false)}>
-        <Typography variant="h6" className="typeList" onClick={()=> goToAbout(navigate)}>
+        <Typography variant="h6" className="typeList" >
           Sobre mim
         </Typography>
-        <Typography variant="h6" className="typeList" onClick={()=> goToProjects(navigate)}>
+        <Typography variant="h6" className="typeList" >
           Projetos
         </Typography>
-        <Typography variant="h6" className="typeList" onClick={()=> goToContact(navigate)}>
+        <Typography variant="h6" className="typeList" >
           Contatos
         </Typography>
       </BoxList>

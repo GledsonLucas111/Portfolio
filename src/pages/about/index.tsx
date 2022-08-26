@@ -1,6 +1,4 @@
 import { Tooltip, Typography } from "@mui/material";
-import Footer from "components/footer";
-import Header from "components/header";
 import { Techs } from "types/techs";
 import { AboutMe, Contect, TechsBox } from "./styles";
 
@@ -61,7 +59,6 @@ const About = () => {
 
   return (
     <div>
-      <Header />
       <Contect>
         <AboutMe>
           <Typography variant="h5" className="textHeader">
@@ -109,7 +106,6 @@ const About = () => {
           })}
         </TechsBox>
       </Contect>
-      <Footer />
     </div>
   );
 };

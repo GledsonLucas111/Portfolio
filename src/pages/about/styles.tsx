@@ -6,6 +6,7 @@ export const Contect = styled(Box)`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  margin: 7rem 0 0;
 `;
 
 export const AboutMe = styled(Box)`
