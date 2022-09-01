@@ -25,9 +25,7 @@ export const BoxLogo = styled(Box)`
   -webkit-animation: slide-top 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045)
     reverse both;
   animation: slide-top 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) reverse both;
-  &:hover {
-    filter: brightness(75%);
-  }
+
   img {
     width: 40px;
   }
@@ -35,6 +33,10 @@ export const BoxLogo = styled(Box)`
     color: ${neutralColor};
     opacity: 1;
     transition: opacity 350ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    &:hover {
+      color: #fff;
+    }
   }
 
   @media screen and (max-width: 500px) {
@@ -49,9 +51,10 @@ export const BoxLogo = styled(Box)`
     }
     img {
       cursor: pointer;
-      &:hover {
-        filter: brightness(75%);
-      }
+      transition: transform 350ms ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
     }
   }
   @media screen and (max-width: 400px) {

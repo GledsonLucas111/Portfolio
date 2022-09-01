@@ -47,7 +47,7 @@ export const Form = styled(Box)`
   flex-direction: column;
   gap: 10px;
   .MuiTextField-root {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     border-radius: 5px 5px 0 0;
     
   }
@@ -59,9 +59,9 @@ export const Form = styled(Box)`
 export const sendButton = {
   width: "100%",
   textAlign: "center",
-  backgroundColor: "#f2f2f2",
+  backgroundColor: "#f0f0f0",
   borderRadius: "0 0 5px 5px",
   "&:hover": {
-    backgroundColor: "#f2f2f2"
+    backgroundColor: "#f0f0f0"
   }
 }

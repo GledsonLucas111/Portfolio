@@ -3,6 +3,7 @@ import { neutralColor } from "constants/colors";
 import styled from "styled-components";
 
 export const HomeComponent = styled.div`
+height: 100%;
 `;
 
 export const BoxApresentation = styled(Box)`
@@ -12,7 +13,7 @@ export const BoxApresentation = styled(Box)`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
+  
   .presentation {
     font-size: 3.2rem;
     margin: 0rem 1rem 1rem;

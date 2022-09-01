@@ -1,21 +1,24 @@
-import { useEffect, useState } from "react";
+import * as React from "react";
 import axios from "axios";
+import { BASE_URL } from "constants/urls";
 
-const UseRequestData = (initialState: [], url: string) => {
-  const [data, setData] = useState(initialState);
-  const [carregando, setCarregando] = useState(false);
-  useEffect(() => {
-    setCarregando(true);
+const UseRequestData = (initialState: any, url: string) => {
+  const [data, setData] = React.useState(initialState);
+  const [loading, setLoading] = React.useState(false);
 
+  React.useEffect(() => {
+    setLoading(true);
     axios
-      .get(url)
+      .get(`${BASE_URL + url}`)
       .then((response) => {
-        setCarregando(false);
         setData(response.data);
+        setLoading(false);
       })
-      .catch((error) => {});
+      .catch((error) => {
+        console.log(error);
+      });
   }, [url]);
 
-  return [data, setData, carregando];
+  return [data, loading];
 };
 export default UseRequestData;

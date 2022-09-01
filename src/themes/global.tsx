@@ -10,7 +10,20 @@ export default createGlobalStyle`
   html, body{
     height: 100vh;
     background-color: ${background};
-    
+    ::-webkit-scrollbar {
+      height: 10px;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f0f0f0;
+      border-radius: 1px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #F61E3B;
+      border-radius: 1px;
+    }
     @-webkit-keyframes slide-top {
     0% {
       -webkit-transform: translateY(0);

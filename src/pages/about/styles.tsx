@@ -38,9 +38,14 @@ export const AboutMe = styled(Box)`
 
 export const TechsBox = styled(Box)`
   text-align: center;
+  margin: 2rem 0 0;
   .techs {
     width: 70px;
     padding: 0px 10px 0;
+    transition: transform 350ms ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .techsText {
     text-align: center;

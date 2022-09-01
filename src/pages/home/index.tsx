@@ -14,6 +14,7 @@ import Button from "@mui/material/Button";
 import Footer from "components/footer";
 import About from "pages/about";
 import Contact from "pages/contact";
+import Projects from "pages/projects";
 
 const Home = () => {
   const defaultOptions = {
@@ -33,13 +34,13 @@ const Home = () => {
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString("Olá, Eu sou o Gledson")
+                .typeString("Olá! Eu sou o Gledson")
                 .pauseFor(2000)
                 .deleteAll()
                 .typeString("Bem vindo ao meu portfólio")
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString("Olá, Eu sou o Gledson")
+                .typeString("Olá! Eu sou o Gledson")
                 .start();
             }}
           />
@@ -64,6 +65,7 @@ const Home = () => {
       </BoxAnimation>
 
       <About />
+      <Projects />
       <Contact />
     </HomeComponent>
   );

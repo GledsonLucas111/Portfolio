@@ -61,7 +61,7 @@ const About = () => {
     <div>
       <Contect>
         <AboutMe>
-          <Typography variant="h5" className="textHeader">
+          <Typography variant="h5" >
             Sobre mim
           </Typography>
           <Typography variant="body1" className="aboutMe">
@@ -89,7 +89,7 @@ const About = () => {
                 Soft Skills
               </Typography>
             </Tooltip>
-            , e colocando em prática tudo que já sei e que estou aprendendo para
+            , e colocando em prática tudo que já sei e o que estou aprendendo para
             tentar simplificar a vida das pessoas.
           </Typography>
         </AboutMe>
