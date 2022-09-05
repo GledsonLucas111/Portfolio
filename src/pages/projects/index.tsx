@@ -12,7 +12,7 @@ const Projects = () => {
   const [project] = UseRequestData([], `/project`);
 
   return (
-    <Content>
+    <Content id="projects">
       <div>
         <Typography
           variant="h5"

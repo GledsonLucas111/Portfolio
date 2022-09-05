@@ -58,8 +58,7 @@ const About = () => {
   ];
 
   return (
-    <div>
-      <Contect>
+      <Contect id="about">
         <AboutMe>
           <Typography variant="h5" >
             Sobre mim
@@ -106,7 +105,6 @@ const About = () => {
           })}
         </TechsBox>
       </Contect>
-    </div>
   );
 };
 

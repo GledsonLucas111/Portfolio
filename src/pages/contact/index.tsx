@@ -56,7 +56,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <Main>
+    <Main id="contact">
       <Content>
         <div>
           <Typography

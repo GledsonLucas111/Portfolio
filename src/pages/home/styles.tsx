@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export const HomeComponent = styled.div`
   height: 100%;
+
 `;
 
 export const BoxApresentation = styled(Box)`
@@ -13,7 +14,8 @@ export const BoxApresentation = styled(Box)`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
   .presentation {
     font-size: 3.2rem;
     margin: 0rem 1rem 1rem;
@@ -41,6 +43,7 @@ export const BoxAnimation = styled(Box)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   .animation {
     width: 30vw;
   }

@@ -4,6 +4,7 @@ import { BoxList, BoxLogo, Component, StyledBurguer } from "./styles";
 import GL from "assets/GL.svg";
 import { goToHome,  } from "routes/Coordinator";
 import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -28,15 +29,15 @@ const Header = () => {
         <div />
       </StyledBurguer>
       <BoxList active={active} onClick={() => toggleDrawer(false)}>
-        <Typography variant="h6" className="typeList" >
+        <Button className="typeList" href="#about">
           Sobre mim
-        </Typography>
-        <Typography variant="h6" className="typeList" >
+        </Button>
+        <Button className="typeList" href="#projects" >
           Projetos
-        </Typography>
-        <Typography variant="h6" className="typeList" >
+        </Button>
+        <Button className="typeList" href="#contact">
           Contatos
-        </Typography>
+        </Button>
       </BoxList>
       
     </Component>
