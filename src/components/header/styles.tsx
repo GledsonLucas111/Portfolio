@@ -137,7 +137,6 @@ export const BoxList = styled(Box).attrs((props: PropActive) => ({
     ${(props) =>
       props.active
         ? `
-        
     flex-direction: column;
     align-items: center;
     background: #F61E3B;
@@ -146,7 +145,7 @@ export const BoxList = styled(Box).attrs((props: PropActive) => ({
     transform: translateX(0);
     
     .typeList {
-      display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -159,11 +158,7 @@ export const BoxList = styled(Box).attrs((props: PropActive) => ({
     }
     `
         : `
-    flex-direction: row;
-    background: transparent;
-    padding-top: 2rem;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(100%);
+      display: none;
     `};
   }
 `;

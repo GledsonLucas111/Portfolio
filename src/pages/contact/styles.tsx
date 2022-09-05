@@ -55,7 +55,7 @@ export const Form = styled(Box)`
     border-radius: 5px 5px 0 0;
     
   }
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 600px) {
     width: 80%;
   }
 `;
