@@ -4,7 +4,7 @@ import { BoxList, BoxLogo, Component, StyledBurguer } from "./styles";
 import GL from "assets/GL.svg";
 import { goToHome,  } from "routes/Coordinator";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
+import Button from "@mui/material/Button";
 
 const Header = () => {
   const navigate = useNavigate();

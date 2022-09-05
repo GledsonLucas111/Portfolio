@@ -5,7 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { BoxProjects, Content, linkButton } from "./styles";
 import UseRequestData from "hooks/UseRequestData";
-import { Button, CardActions } from "@mui/material";
+import Button from "@mui/material/Button";
+import CardActions from "@mui/material/CardActions";
 import { Project } from "types/project";
 
 const Projects = () => {

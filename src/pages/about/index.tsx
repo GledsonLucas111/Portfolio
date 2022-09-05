@@ -1,4 +1,5 @@
-import { Tooltip, Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Tooltip from "@mui/material/Tooltip";
 import { Techs } from "types/techs";
 import { AboutMe, Contect, TechsBox } from "./styles";
 
