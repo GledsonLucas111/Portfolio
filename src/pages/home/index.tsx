@@ -11,7 +11,6 @@ import Typewriter from "typewriter-effect";
 import Lottie from "react-lottie";
 import developer from "animations/developer-yoga.json";
 import Button from "@mui/material/Button";
-import Footer from "components/footer";
 import About from "pages/about";
 import Contact from "pages/contact";
 import Projects from "pages/projects";
@@ -34,13 +33,13 @@ const Home = () => {
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString("Olá! Eu sou o Gledson")
+                .typeString("Olá! Eu sou o Gledson.")
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString("Bem vindo ao meu portfólio")
+                .typeString("Bem vindo(a) ao meu portfólio!")
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString("Olá! Eu sou o Gledson")
+                .typeString("Olá! Eu sou o Gledson.")
                 .start();
             }}
           />
@@ -63,7 +62,6 @@ const Home = () => {
           </Button>
         </div>
       </BoxAnimation>
-
       <About />
       <Projects />
       <Contact />

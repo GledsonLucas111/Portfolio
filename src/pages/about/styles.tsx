@@ -16,7 +16,7 @@ export const AboutMe = styled(Box)`
     margin: 2rem 0 2rem;
     font-size: 18px;
     color: #fff;
-    width: 80vw;
+    width: 75vw;
     text-align: center;
     .link {
       color: #fe7e02;

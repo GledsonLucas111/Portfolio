@@ -11,7 +11,10 @@ export const Content = styled(Box)`
   align-items: center;
   height: 80%;
   gap: 50px;
-
+  .typografy_2 {
+    font-size: 18px;
+    width: 75vw;
+  }
   .icons {
     width: 100%;
     display: flex;
@@ -37,6 +40,7 @@ export const Content = styled(Box)`
   @media (max-width: 490px) {
     .typografy_2 {
       font-size: 15px;
+      width: 90vw;
     }
   }
 `;

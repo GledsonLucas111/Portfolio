@@ -37,16 +37,16 @@ export const BoxProjects = styled(Box)`
     .MuiCard-root {
       min-width: 350px;
       min-height: 310px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 1rem;
       border: 5px solid #fff;
-      cursor: pointer;
-      transition: transform 350ms ease-in-out;
-      &:hover {
-        transform: scale(0.98);
-      }
-      @media screen and (max-width: 440px) {
-        min-width: 330px;
-        min-height: 270px;
+      
+      @media screen and (max-width: 380px) {
+        min-width: 90vw;
+        min-height: 200px;
       }
       .CardImg {
         width: 100%;
@@ -56,3 +56,11 @@ export const BoxProjects = styled(Box)`
     }
   }
 `;
+
+export const linkButton = {
+  backgroundColor: "#F61E3B",
+  color: "#FFFFFF",
+  "&:hover": {
+    backgroundColor: "#f8304b",
+  },
+};

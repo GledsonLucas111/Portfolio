@@ -3,7 +3,7 @@ import { neutralColor } from "constants/colors";
 import styled from "styled-components";
 
 export const HomeComponent = styled.div`
-height: 100%;
+  height: 100%;
 `;
 
 export const BoxApresentation = styled(Box)`
@@ -13,7 +13,7 @@ export const BoxApresentation = styled(Box)`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  
+
   .presentation {
     font-size: 3.2rem;
     margin: 0rem 1rem 1rem;
@@ -30,7 +30,7 @@ export const BoxApresentation = styled(Box)`
       font-size: 5.5vw;
     }
     .description {
-      font-size: 3vw;
+      font-size: 4.5vw;
     }
   }
 `;
@@ -68,4 +68,3 @@ export const buttonCV = {
       "shadow-pop-br 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both",
   },
 };
-

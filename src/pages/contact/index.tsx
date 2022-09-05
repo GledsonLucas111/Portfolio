@@ -1,5 +1,4 @@
 import Footer from "components/footer";
-import Header from "components/header";
 import { Content, Form, Main, sendButton } from "./styles";
 import { BsLinkedin, BsWhatsapp, BsGithub, BsInstagram } from "react-icons/bs";
 import { RiMailSendLine } from "react-icons/ri";
@@ -74,7 +73,7 @@ const Contact = () => {
             align="center"
             className="typografy_2"
           >
-            Procuro oportunidade de trabalho onde eu possa aprender, me
+            Procuro uma oportunidade de trabalho onde eu possa aprender, me
             desenvolver e evoluir na minha carreia profissional.
           </Typography>
         </div>            

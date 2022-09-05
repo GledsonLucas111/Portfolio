@@ -3,19 +3,13 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { BoxProjects, Content } from "./styles";
+import { BoxProjects, Content, linkButton } from "./styles";
 import UseRequestData from "hooks/UseRequestData";
-import ModalProject from "./modalProject";
+import { Button, CardActions } from "@mui/material";
+import { Project } from "types/project";
 
 const Projects = () => {
-  const [open, setOpen] = React.useState(false);
-  const [idProject, setIdProject] = React.useState("");
   const [project] = UseRequestData([], `/project`);
-  
-  const openModal = (open: boolean, id: string) => {
-    setOpen(open)
-    setIdProject(id)
-  }
 
   return (
     <Content>
@@ -31,9 +25,9 @@ const Projects = () => {
       </div>
       <BoxProjects>
         <div className="corosel">
-            {project?.map((project: any) => {
+            {project?.map((project: Project) => {
               return (
-                <Card key={project.id} onClick={()=> openModal(true, project.id)}>
+                <Card key={project.id}>
                   <div className="CardImg">
                   <CardMedia
                     component="img"
@@ -51,12 +45,29 @@ const Projects = () => {
                       {project.description}
                     </Typography>
                   </CardContent>
+                  <CardActions>
+                  <Button
+                    size="small"
+                    href={project.repository}
+                    target="_blank"
+                    sx={linkButton}
+                  >
+                    Repositótio
+                  </Button>
+                  <Button
+                    size="small"
+                    href={project.deploy}
+                    target="_blank"
+                    sx={linkButton}
+                  >
+                    projeto
+                  </Button>
+                  </CardActions>
                 </Card>
               );
             })}
         </div>
       </BoxProjects>
-      <ModalProject open={open} setOpen={setOpen} id={idProject}/>
     </Content>
   );
 };
