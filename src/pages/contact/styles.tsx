@@ -69,3 +69,6 @@ export const sendButton = {
     backgroundColor: "#f0f0f0"
   }
 }
+export const ButtonOk = styled.p`
+
+`

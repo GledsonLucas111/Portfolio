@@ -1,5 +1,6 @@
+import * as React from "react";
 import Footer from "components/footer";
-import { Content, Form, Main, sendButton } from "./styles";
+import { Content, Form, Main, sendButton, ButtonOk } from "./styles";
 import { BsLinkedin, BsWhatsapp, BsGithub, BsInstagram } from "react-icons/bs";
 import { RiMailSendLine } from "react-icons/ri";
 import { neutralColor } from "constants/colors";
@@ -11,6 +12,7 @@ import IconButton from "@mui/material/IconButton";
 import Zoom from "@mui/material/Zoom";
 import TextField from "@mui/material/TextField";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const actions: Actions[] = [
   {
@@ -41,13 +43,19 @@ const actions: Actions[] = [
 ];
 
 const Contact = () => {
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent | any) => {
     e.preventDefault();
     emailjs
       .sendForm("meu_gmail", "template_k28uopb", e.target, "aOsZ5PH7k-rGZK5rn")
       .then(
         (result) => {
-          alert("Obrigado, tentarei responder o mais breve possivel.");
+          Swal.fire({
+            title: "Enviado!",
+            html: "Tentarei responder o mais breve possível.",
+            icon: "success",
+            confirmButtonText: 'Ok',
+            confirmButtonColor: '#3BC974'
+          });
         },
         (error) => {
           console.log(error.text);
@@ -76,7 +84,7 @@ const Contact = () => {
             Procuro uma oportunidade de trabalho onde eu possa aprender, me
             desenvolver e evoluir na minha carreia profissional.
           </Typography>
-        </div>            
+        </div>
         <Form component="form" onSubmit={sendEmail}>
           <TextField
             required
