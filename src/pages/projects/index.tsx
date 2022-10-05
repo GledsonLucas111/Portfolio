@@ -34,7 +34,7 @@ const Projects = () => {
                     component="img"
                     height="190"
                     sx={{width: "100%"}}
-                    image={project.img1}
+                    image={project.img}
                     alt={project.name}
                   />
                   </div>
