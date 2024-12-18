@@ -54,7 +54,7 @@ const Home = () => {
         <div className="buttonCV">
           <Button
             sx={buttonCV}
-            href="https://drive.google.com/file/d/1e-oX57ygfIOJ4s-3lLPYtruhwA48yiIu/view?usp=sharing"
+            href="https://drive.google.com/file/d/1NY2KqxLBmKRUPJ0Zud1DiyU3CkEby5Ky/view?usp=sharing"
             target="_blank"
           >
             download cv

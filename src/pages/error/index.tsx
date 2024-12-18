@@ -1,4 +1,3 @@
-import * as React from "react";
 import { buttonBack, Component } from "./styles";
 import notFound from "animations/lonely-404.json";
 import Lottie from "react-lottie";
