@@ -15,7 +15,7 @@ export default createGlobalStyle`
       height: 10px;
     }
     ::-webkit-scrollbar {
-      width: 10px;
+      width: 3px;
     }
     ::-webkit-scrollbar-track {
       background: #f0f0f0;
