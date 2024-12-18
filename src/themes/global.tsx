@@ -9,6 +9,7 @@ export default createGlobalStyle`
   }
   html, body{
     height: 100vh;
+    scroll-behavior: smooth;
     background-color: ${background};
     ::-webkit-scrollbar {
       height: 10px;

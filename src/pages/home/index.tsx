@@ -1,4 +1,3 @@
-import * as React from "react";
 import Header from "components/header";
 import {
   BoxAnimation,
@@ -11,9 +10,9 @@ import Typewriter from "typewriter-effect";
 import Lottie from "react-lottie";
 import developer from "animations/developer-yoga.json";
 import Button from "@mui/material/Button";
-import About from "pages/about";
-import Contact from "pages/contact";
-import Projects from "pages/projects";
+import About from "components/about";
+import Projects from "components/projects";
+import Contact from "components/contact";
 
 const Home = () => {
   const defaultOptions = {

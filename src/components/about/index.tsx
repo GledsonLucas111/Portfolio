@@ -59,53 +59,41 @@ const About = () => {
   ];
 
   return (
-      <Contect id="about">
-        <AboutMe>
-          <Typography variant="h5" >
-            Sobre mim
-          </Typography>
-          <Typography variant="body1" className="aboutMe">
-            Olá, eu sou o Gledson Lucas, tenho 21 anos e há algum tempo comecei
-            a estudar programação, mas sempre fui apaixonado pelo mundo da
-            tecnologia. Sou formado pelo bootcamp web full-stack na{" "}
-            <a
-              href="https://www.labenu.com.br"
-              rel="noreferrer"
-              target="_blank"
-              className="link"
-            >
-              Labenu
-            </a>
-            . Um dos meus objetivos tanto como pessoa quanto profissional é de
-            estar em um constante aprendizado, sempre aprimorando minhas{" "}
-            <Tooltip title={hardSkills}>
-              <Typography variant="body1" className="skills">
-                Hard Skills
-              </Typography>
-            </Tooltip>{" "}
-            e minhas{" "}
-            <Tooltip title={softSkills}>
-              <Typography variant="body1" className="skills">
-                Soft Skills
-              </Typography>
+    <Contect id="about">
+      <AboutMe>
+        <Typography variant="h5">Sobre mim</Typography>
+        <Typography variant="body1" className="aboutMe">
+          Olá, eu sou o Gledson Lucas, há algum tempo comecei a estudar
+          programação, mas sempre fui apaixonado pelo mundo da tecnologia.
+          Atualmente estou cursando SPI (Sistemas Para Internet) no IFMA
+          (Instituto Federal do Maranhão). Estou sempre em busca do
+          aprimoramento das minhas{" "}
+          <Tooltip title={hardSkills}>
+            <Typography variant="body1" className="skills">
+              Hard Skills
+            </Typography>
+          </Tooltip>{" "}
+          e minhas{" "}
+          <Tooltip title={softSkills}>
+            <Typography variant="body1" className="skills">
+              Soft Skills
+            </Typography>
+          </Tooltip>
+        </Typography>
+      </AboutMe>
+      <TechsBox>
+        <Typography variant="h5" className="techsText">
+          Tecnologias
+        </Typography>
+        {techs.map((tech: Techs) => {
+          return (
+            <Tooltip title={tech.name} className="techs" key={tech.name}>
+              <img alt={tech.name} src={tech.img} />
             </Tooltip>
-            , e colocando em prática tudo que já sei e o que estou aprendendo para
-            tentar simplificar a vida das pessoas.
-          </Typography>
-        </AboutMe>
-        <TechsBox>
-          <Typography variant="h5" className="techsText">
-            Tecnologias
-          </Typography>
-          {techs.map((tech: Techs) => {
-            return (
-              <Tooltip title={tech.name} className="techs">
-                <img alt={tech.name} src={tech.img} />
-              </Tooltip>
-            );
-          })}
-        </TechsBox>
-      </Contect>
+          );
+        })}
+      </TechsBox>
+    </Contect>
   );
 };
 

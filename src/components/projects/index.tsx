@@ -11,7 +11,6 @@ import { Project } from "types/project";
 
 const Projects = () => {
   const [project] = UseRequestData([], `/project`);
-
   return (
     <Content id="projects">
       <div>
@@ -26,27 +25,27 @@ const Projects = () => {
       </div>
       <BoxProjects>
         <div className="corosel">
-            {project?.map((project: Project) => {
-              return (
-                <Card key={project.id}>
-                  <div className="CardImg">
+          {project.map((project: Project) => {
+            return (
+              <Card key={project.id}>
+                <div className="CardImg">
                   <CardMedia
                     component="img"
                     height="190"
-                    sx={{width: "100%"}}
-                    image={project.img}
+                    sx={{ width: "100%" }}
+                    image={project.img ? project.img : "carregando"}
                     alt={project.name}
                   />
-                  </div>
-                  <CardContent>
-                    <Typography variant="h6">
-                      {project.name}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {project.description}
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
+                </div>
+                <CardContent>
+                  <Typography variant="h6">
+                    {project.name ? project.name : "carregando"}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {project.description}
+                  </Typography>
+                </CardContent>
+                <CardActions>
                   <Button
                     size="small"
                     href={project.repository}
@@ -63,10 +62,10 @@ const Projects = () => {
                   >
                     projeto
                   </Button>
-                  </CardActions>
-                </Card>
-              );
-            })}
+                </CardActions>
+              </Card>
+            );
+          })}
         </div>
       </BoxProjects>
     </Content>

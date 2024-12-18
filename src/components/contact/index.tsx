@@ -1,6 +1,6 @@
 import * as React from "react";
 import Footer from "components/footer";
-import { Content, Form, Main, sendButton, ButtonOk } from "./styles";
+import { Content, Form, Main, sendButton } from "./styles";
 import { BsLinkedin, BsWhatsapp, BsGithub, BsInstagram } from "react-icons/bs";
 import { RiMailSendLine } from "react-icons/ri";
 import { neutralColor } from "constants/colors";
