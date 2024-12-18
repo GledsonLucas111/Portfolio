@@ -38,7 +38,7 @@ const actions: Actions[] = [
   {
     icon: <BsWhatsapp />,
     name: "WhatsApp",
-    link: "https://wa.me/5586988561453",
+    link: "https://wa.me/5511913197092",
   },
 ];
 
