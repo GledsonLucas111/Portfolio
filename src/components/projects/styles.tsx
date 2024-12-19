@@ -8,7 +8,7 @@ export const Content = styled(Box)`
   margin: 7rem 0 0;
 `;
 export const BoxProjects = styled(Box)`
-  max-width: 80vw;
+  max-width: 60vw;
   @media screen and (max-width: 440px) {
     max-width: 90vw;
   }
@@ -18,7 +18,7 @@ export const BoxProjects = styled(Box)`
     overflow-x: auto;
     scroll-behavior: smooth;
     ::-webkit-scrollbar {
-      height: 10px;
+      height: 5px;
     }
     ::-webkit-scrollbar {
       width: 10px;

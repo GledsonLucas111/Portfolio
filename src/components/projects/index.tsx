@@ -1,4 +1,3 @@
-import * as React from "react";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
@@ -8,9 +7,11 @@ import UseRequestData from "hooks/UseRequestData";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import { Project } from "types/project";
+import projectimg  from "../../assets/projectimg.jpg";
 
 const Projects = () => {
   const [project] = UseRequestData([], `/project`);
+
   return (
     <Content id="projects">
       <div>
@@ -33,14 +34,16 @@ const Projects = () => {
                     component="img"
                     height="190"
                     sx={{ width: "100%" }}
-                    image={project.img ? project.img : "carregando"}
+                    image={
+                      project.img.length === 0
+                        ? projectimg
+                        : project.img
+                    }
                     alt={project.name}
                   />
                 </div>
                 <CardContent>
-                  <Typography variant="h6">
-                    {project.name ? project.name : "carregando"}
-                  </Typography>
+                  <Typography variant="h6">{project.name}</Typography>
                   <Typography variant="body2" color="text.secondary">
                     {project.description}
                   </Typography>
