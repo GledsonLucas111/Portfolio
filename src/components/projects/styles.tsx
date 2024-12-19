@@ -8,7 +8,7 @@ export const Content = styled(Box)`
   margin: 7rem 0 0;
 `;
 export const BoxProjects = styled(Box)`
-  max-width: 60vw;
+  max-width: 90vw;
   @media screen and (max-width: 440px) {
     max-width: 90vw;
   }
@@ -34,8 +34,12 @@ export const BoxProjects = styled(Box)`
     }
 
     gap: 50px;
+    .MuiCardContent-root {
+      width: 100%;
+    }
     .MuiCard-root {
-      min-width: 350px;
+      min-width: 370px;
+      max-width: 400px;
       min-height: 310px;
       display: flex;
       flex-direction: column;
@@ -43,7 +47,7 @@ export const BoxProjects = styled(Box)`
       justify-content: space-between;
       margin-bottom: 1rem;
       border: 5px solid #fff;
-      
+
       @media screen and (max-width: 380px) {
         min-width: 90vw;
         min-height: 200px;
