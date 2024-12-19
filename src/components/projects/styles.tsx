@@ -10,7 +10,7 @@ export const Content = styled(Box)`
 export const BoxProjects = styled(Box)`
   max-width: 90vw;
   @media screen and (max-width: 440px) {
-    max-width: 90vw;
+    max-width: 95vw;
   }
   margin: 2rem 0 0;
   .corosel {
@@ -33,7 +33,7 @@ export const BoxProjects = styled(Box)`
       border-radius: 1px;
     }
 
-    gap: 50px;
+    gap: 10px;
     .MuiCardContent-root {
       width: 100%;
     }
